@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0e467cd321764409daa466606fd2bb, type: 3}
   m_Name: Cohesion
   m_EditorClassIdentifier: 
+  filter: {fileID: 11400000, guid: c94f2f2bb6af48e4db4cc6505fa8f6b1, type: 2}

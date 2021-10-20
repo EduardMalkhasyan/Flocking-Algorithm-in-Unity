@@ -157,7 +157,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.5176471, g: 0.5176471, b: 0.5176471, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -204,6 +204,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &525537809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 525537811}
+  - component: {fileID: 525537810}
+  m_Layer: 0
+  m_Name: Flock Yellow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &525537810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525537809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a196821d3e6fffa44b9e6c8bd5063a66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentPrefab: {fileID: 7524694393776153172, guid: eb159755d6f62ac43980340722dd30e0,
+    type: 3}
+  behavior: {fileID: 11400000, guid: 435c42d90fb28974a875e93c339b292d, type: 2}
+  startingCount: 100
+  driveFactor: 10
+  maxSpeed: 5
+  neighborRadius: 1.5
+  avoidanceRadiusMultiplier: 0.5
+  extraAvoidanceRadius: 4
+--- !u!4 &525537811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525537809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1198903024
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +267,7 @@ GameObject:
   - component: {fileID: 1198903025}
   - component: {fileID: 1198903026}
   m_Layer: 0
-  m_Name: Flock
+  m_Name: Flock Black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -247,10 +299,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a196821d3e6fffa44b9e6c8bd5063a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agentPrefab: {fileID: 7524694393776153172, guid: 5fa17dfd9286c69429e57adfc138dd48,
+  agentPrefab: {fileID: 7524694393776153172, guid: be7fd806dbd32154db4384c80802a13d,
     type: 3}
   behavior: {fileID: 11400000, guid: 435c42d90fb28974a875e93c339b292d, type: 2}
-  startingCount: 250
+  startingCount: 100
   driveFactor: 10
   maxSpeed: 5
   neighborRadius: 1.5
